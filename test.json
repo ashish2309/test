@@ -1,0 +1,141 @@
+{
+	"customerGridComponent": {
+		"gridreducer": {
+			"metaData": {
+				"headerList": [
+					{
+						"isEditable": false,
+						"hidden": "false",
+						"searchType": "like",
+						"queryColumnName": "id",
+						"isFilter": "true",
+						"isSortingEnabled": "true",
+						"width": 100,
+						"link": "false",
+						"filterFieldType": "Long",
+						"eventType": "customRenderer",
+						"header": "ID",
+						"localeHeader": "id",
+						"headerMappingName": "ID"
+					},
+					{
+						"isEditable": false,
+						"hidden": "false",
+						"searchType": "like",
+						"queryColumnName": "name",
+						"isFilter": "true",
+						"isSortingEnabled": "true",
+						"width": 100,
+						"link": "false",
+						"filterFieldType": "String",
+						"header": "Seller Name",
+						"localeHeader": "name",
+						"headerMappingName": "Seller Name"
+					},
+					{
+						"isEditable": false,
+						"hidden": "false",
+						"searchType": "like",
+						"queryColumnName": "customerId",
+						"isFilter": "false",
+						"isSortingEnabled": "true",
+						"width": 100,
+						"link": "false",
+						"filterFieldType": "String",
+						"header": "Customer ID",
+						"localeHeader": "customerId",
+						"headerMappingName": "Customer ID"
+					},
+					{
+						"isEditable": false,
+						"hidden": "false",
+						"searchType": "like",
+						"queryColumnName": "status",
+						"isFilter": "false",
+						"isSortingEnabled": "true",
+						"width": 100,
+						"link": "false",
+						"filterFieldType": "Short",
+						"header": "Status",
+						"localeHeader": "status",
+						"headerMappingName": "Status",
+						"eventType": "select",
+						"selectOption": {
+							"0": "Inactive",
+							"1": "Active"
+						}
+					}
+				],
+				"allParams": {
+					"gridHeight": 618,
+					"gridName": "GET_ALL_SELLERS_GRID",
+					"pageSize": 100,
+					"isPaginationNeeded": true,
+					"gridWidth": 1114,
+					"hidePaginationBar": true,
+					"queryId": "GET_ALL_SELLERS_QUERY",
+					"countQueryId": "GET_ALL_SELLERS_COUNT_QUERY"
+				},
+				"buttonList": [
+					{
+						"name": "Create",
+						"id": "createseller",
+						"icon": "fa fa-pencil",
+						"eventName": "openCreate"
+					}
+				]
+			},
+			"total": 4,
+			"data": [
+				{
+					"name": "Tester Test",
+					"customerId": 11,
+					"id": 4,
+					"version": 37,
+					"status": "Inactive"
+				},
+				{
+					"name": "Test Seller",
+					"customerId": 9,
+					"id": 3,
+					"version": 8,
+					"status": "Active"
+				},
+				{
+					"name": "Ashish Kumar",
+					"customerId": 8,
+					"id": 2,
+					"version": 0,
+					"status": "Active"
+				},
+				{
+					"name": "MPO",
+					"customerId": 1,
+					"id": 1,
+					"version": 4,
+					"status": "Active"
+				}
+			],
+			"limit": 20,
+			"start": 0,
+			"sort": "id",
+			"dir": "desc"
+		}
+	},
+	"metaConfigInfo": [
+		{
+			"componentType": "customerGridComponent",
+			"componentId": null,
+			"name": "customerGridComponent"
+		}
+	],
+	"websiteProperties": {},
+	"config": {
+		"themeId": 2,
+		"viewId": 67,
+		"skinId": 4,
+		"themeName": "ebc",
+		"skinName": "blueSkin",
+		"viewName": "sellers/SellerDisplay"
+	}
+}
